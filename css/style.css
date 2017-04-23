@@ -1,0 +1,12 @@
+.newsCell{
+	height:200px;
+	background:#11c0ff;
+	border:5px double #dcdcdc;
+}
+
+.galerysMenu{
+	background:#CCCCCC;
+}
+.galerysMenu:hover{
+	background:#00FF99;
+}

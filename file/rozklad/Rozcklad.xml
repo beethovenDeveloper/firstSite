@@ -1,0 +1,27 @@
+<rozklad>
+    <date></date>
+    <class name="10">
+    	<lesson></lesson>
+    	<lesson></lesson>
+    	<lesson></lesson>
+    	<lesson></lesson>
+    	<lesson></lesson>
+    	<lesson></lesson>
+    </class>
+    <class name="9">
+    	<lesson></lesson>
+    	<lesson></lesson>
+    	<lesson></lesson>
+    	<lesson></lesson>
+    	<lesson></lesson>
+    	<lesson></lesson>
+    </class>
+    <class name="8">
+    	<lesson></lesson>
+    	<lesson></lesson>
+    	<lesson></lesson>
+    	<lesson></lesson>
+    	<lesson></lesson>
+    	<lesson></lesson>
+    </class>
+</rozklad>
