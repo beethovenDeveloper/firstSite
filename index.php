@@ -131,7 +131,7 @@
       </ul>
 
       <div class="carousel-inner">
-        <?php dddddd(); ?>
+        <?php createBodyAlbom(); ?>
         <!--  <div class="item active">
            <img src="image/1.jpg" alt="...">
            <div class="carousel-caption">
@@ -164,7 +164,11 @@
 </div>
 <div class="container">
     <div class="row">
-        <dic class="col-md-12" style="height:100px;"></dic>
+        <div class="col-md-12" style="height:100px;">
+          <?php
+             createListCaptureForAlbom();
+          ?>
+        </div>
     </div>
 </div>
 

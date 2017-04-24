@@ -1,6 +1,43 @@
 
 <?php
-   function dddddd()
+   //method for create main albom
+   function createAlbomForSite()
+   {
+       echo "<div id='carousel' class='carousel slide' data-ride='carousel'>";
+
+       echo "</div>";
+   }
+    
+   function createListCaptureForAlbom()
+   {
+   	   $nameFolder=$_GET["pathF"];
+	   $fold=$_GET["fold"];
+	   $nameFolder=urldecode($nameFolder);
+	   $fold=urldecode($fold);
+
+	   $dd1= mb_convert_encoding($nameFolder,"UTF-8","Windows-1251");
+
+	   $dd2= mb_convert_encoding($fold,"UTF-8","Windows-1251");
+
+	   $ddddd="galery/".$dd2."/".$dd1;
+
+
+	   // $dd1= mb_convert_encoding($nameFolder,"Windows-1251","UTF-8");
+
+	   // $dd2= mb_convert_encoding($fold,"Windows-1251","UTF-8");
+
+	   // $ddddd="galery/".$dd2."/".$dd1;
+       
+
+       $content=file_get_contents("'".$ddddd."/galery.xml'");
+       $rss=new SimpleXMLElement($content);
+       foreach($rss->xpath('//img') as $listImage)
+       {
+       	 echo $listImage;
+       }
+   }
+
+   function createBodyAlbom()
    {
    $nameFolder=$_GET["pathF"];
    $fold=$_GET["fold"];
