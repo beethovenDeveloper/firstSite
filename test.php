@@ -63,7 +63,26 @@
    $drrr="galery/".mb_convert_encoding($fold,"Windows-1251","UTF-8")."/".mb_convert_encoding($nameFolder,"Windows-1251","UTF-8");
    $fileX=file_get_contents("".$drrr."/galery.xml");
    $rss=new SimpleXMLElement($fileX);
-   $dirs1=opendir("".$drrr);
+   $rere=0;
+   foreach($rss->xpath("//gal") as $fil)
+   {
+   	   if($rere==0)
+   	   	   {
+                 echo "<div class='item active'>";
+   	   	   }
+   	   	   else
+   	   	   {
+                 echo "<div class='item'>";
+   	   	   }
+   	   	   echo "<img src='".$rss->xpath("//image")[$rere]."' alt='..'>";//"<img src='".$rrrrrrrrr."/".$ddd."' alt='..'>";
+           echo "<div class='carousel-caption'>";
+           echo "<h2>".$rss->xpath("//title")[$rere]."</h2>";
+           echo "<p>one</p>";
+           echo "</div>";
+           echo "</div>";
+           $rere=$rere+1;
+   }
+  /* $dirs1=opendir("".$drrr);
    $rere=0;
    for($i=0;$ddd=readdir($dirs1);$i++)
    {
@@ -89,6 +108,6 @@
         	// echo "<img src='galery/".mb_convert_encoding("Выпускные","Windows-1251","UTF-8")."/".mb_convert_encoding("ввввввввв1","Windows-1251","UTF-8")."/".mb_convert_encoding($ddd,"Windows-1251","UTF-8")."'>";
        }
    }
-   closedir($dirs1);
+   closedir($dirs1);*/
    }
 ?>
