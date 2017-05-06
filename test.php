@@ -61,11 +61,13 @@
    $nameFolder= mb_convert_encoding($nameFolder,"UTF-8","Windows-1251");
    $fold= mb_convert_encoding($fold,"UTF-8","Windows-1251");
    $drrr="galery/".mb_convert_encoding($fold,"Windows-1251","UTF-8")."/".mb_convert_encoding($nameFolder,"Windows-1251","UTF-8");
+   $fileX=file_get_contents("".$drrr."/galery.xml");
+   $rss=new SimpleXMLElement($fileX);
    $dirs1=opendir("".$drrr);
    $rere=0;
    for($i=0;$ddd=readdir($dirs1);$i++)
    {
-   	if(($ddd!=".")&&($ddd!=".."))
+   	if(($ddd!=".")&&($ddd!="..")&&($ddd!="galery.xml"))
    	   {
    	   	   if($rere==0)
    	   	   {
@@ -76,9 +78,9 @@
    	   	   {
                  echo "<div class='item'>";
    	   	   }
-   	   	   echo "<img src='".$rrrrrrrrr."/".$ddd."' alt='..'>";
+   	   	   echo "<img src='".$rss->xpath("//image")[0]."' alt='..'>";//"<img src='".$rrrrrrrrr."/".$ddd."' alt='..'>";
            echo "<div class='carousel-caption'>";
-           echo "<h2>slide number one</h2>";
+           echo "<h2>".$rss->xpath("//title")[0]."</h2>";
            echo "<p>one</p>";
            echo "</div>";
            echo "</div>";

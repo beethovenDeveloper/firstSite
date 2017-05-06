@@ -82,7 +82,7 @@
                   <ul class="dropdown-menu">
 
                      <?php
-                        $dirs=opendir("galery");
+                        $dirs=opendir("galery/");
                         for($i=0;$d=readdir($dirs);$i++)
                         {
                           if(($d==".")||($d==".."))
@@ -166,7 +166,7 @@
     <div class="row">
         <div class="col-md-12" style="height:100px;">
           <?php
-             createListCaptureForAlbom();
+             //createListCaptureForAlbom();
           ?>
         </div>
     </div>

@@ -1,12 +1,14 @@
 <galery>
-   <image>
-   	  <img>galery/Выпускные/ввввввввв1/01.jpg</img>
-   	  <caption>Выпускной 2017</caption>
-   	  <description>В актовом зале</description>
-   </image>
-   <image>
-   	  <img>galery/Выпускные/ввввввввв1/01.jpg</img>
-   	  <caption>Выпускной 2017</caption>
-   	  <description>В актовом зале</description>
-   </image>
+	<gal>
+	    <title>title one</title>
+	    <image>galery/Выпускные/ввввввввв1/1n2tUHacVJY.jpg</image>
+    </gal>
+    <gal>
+	   <title>title two</title>
+	    <image>galery/Выпускные/ввввввввв1/01.jpg</image>
+    </gal>
+    <gal>
+	   <title>title three</title>
+	    <image>galery/Выпускные/ввввввввв1/01 (1).jpg</image>
+    </gal>
 </galery>
