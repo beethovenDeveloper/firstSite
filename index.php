@@ -85,7 +85,7 @@
                         $dirs=opendir("galery/");
                         for($i=0;$d=readdir($dirs);$i++)
                         {
-                          if(($d==".")||($d==".."))
+                          if(($d==".")||($d=="..")||($d=="galery.xml"))
                           {
 
                           }
@@ -110,7 +110,7 @@
                   for($i=0;$d1=readdir($dd);$i++)
                   {
 
-                    if(($d1!=".")&&($d1!=".."))
+                    if(($d1!=".")&&($d1!="..")&&($d1!="galery.xml"))
                     {
                        echo "<div class='galerysMenu'  style='height:100px;width:150px;margin-left:".$j."px;margin-top:".$k."px;text-align:center;' nameFold='".urlencode($d1)."' fold='".urlencode($_GET["fold"])."'><br><span class='glyphicon glyphicon-folder-open' style='font-size:40px;color:yellow;'></span><br>".mb_convert_encoding($d1,"UTF-8","Windows-1251")."</div>";
                       $j=$j+150;

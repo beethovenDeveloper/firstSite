@@ -54,15 +54,24 @@
 
    function galeryImage($rrrrrrrrr)
    {
-   $nameFolder=$_GET["pathF"];
-   $fold=$_GET["fold"];
-   $nameFolder=urldecode($nameFolder);
-   $fold=urldecode($fold);
-   $nameFolder= mb_convert_encoding($nameFolder,"UTF-8","Windows-1251");
-   $fold= mb_convert_encoding($fold,"UTF-8","Windows-1251");
-   $drrr="galery/".mb_convert_encoding($fold,"Windows-1251","UTF-8")."/".mb_convert_encoding($nameFolder,"Windows-1251","UTF-8");
-   $fileX=file_get_contents("".$drrr."/galery.xml");
-   $rss=new SimpleXMLElement($fileX);
+    $rss="";
+   if((isset($_GET["fold"]))&&(isset($_GET["pathF"])))
+   {
+        $nameFolder=$_GET["pathF"];
+        $fold=$_GET["fold"];
+      	$nameFolder=urldecode($nameFolder);
+   		$fold=urldecode($fold);
+   		$nameFolder= mb_convert_encoding($nameFolder,"UTF-8","Windows-1251");
+   		$fold= mb_convert_encoding($fold,"UTF-8","Windows-1251");
+   		$drrr="galery/".mb_convert_encoding($fold,"Windows-1251","UTF-8")."/".mb_convert_encoding($nameFolder,"Windows-1251","UTF-8");
+   		$fileX=file_get_contents("".$drrr."/galery.xml");
+   		$rss=new SimpleXMLElement($fileX);
+   }
+   else
+   {
+   		$fileX=file_get_contents("galery/galery.xml");
+   		$rss=new SimpleXMLElement($fileX);
+   }
    $rere=0;
    foreach($rss->xpath("//gal") as $fil)
    {
