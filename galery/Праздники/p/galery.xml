@@ -1,4 +1,6 @@
 <galery>
-	<title>title one</title>
-	<title>title two</title>
+	<gal>
+	    <title>title one</title>
+	    <image>galery/Праздники/p/32b742164c33bf0706b6c52949836fb33c6ed9b5.jpeg</image>
+    </gal>
 </galery>

@@ -164,7 +164,7 @@
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-md-12" style="height:100px;">
+        <div class="col-md-12" style="margin-top:10px;height:200px;background:black;">
           <?php
              //createListCaptureForAlbom();
           ?>

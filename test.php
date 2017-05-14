@@ -83,7 +83,7 @@
    	   	   {
                  echo "<div class='item'>";
    	   	   }
-   	   	   echo "<img src='".$rss->xpath("//image")[$rere]."' alt='..'>";//"<img src='".$rrrrrrrrr."/".$ddd."' alt='..'>";
+   	   	   echo "<center><img src='".$rss->xpath("//image")[$rere]."' alt='..'></center>";//"<img src='".$rrrrrrrrr."/".$ddd."' alt='..'>";
            echo "<div class='carousel-caption'>";
            echo "<h2>".$rss->xpath("//title")[$rere]."</h2>";
            echo "<p>one</p>";

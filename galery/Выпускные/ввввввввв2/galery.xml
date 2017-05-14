@@ -1,4 +1,6 @@
 <galery>
-	<title>title one</title>
-	<title>title two</title>
+	<gal>
+	    <title>title one</title>
+	    <image>galery/Выпускные/ввввввввв2/AX2QSRlU_uM.jpg</image>
+    </gal>
 </galery>
