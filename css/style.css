@@ -5,8 +5,12 @@
 }
 
 .galerysMenu{
-	background:#CCCCCC;
+	background:#333333;
+	border-radius:50px;
+	color:white;
 }
 .galerysMenu:hover{
-	background:#00FF99;
+	background:#443333;
+	box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+	border: 2px double black;
 }

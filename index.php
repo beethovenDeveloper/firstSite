@@ -72,13 +72,16 @@
         </div>
   </div>
   <br>
-<div class="container">
 
-  <div class="row">
+  <!-- galery panel -->
+<div class="container" style="background-color:#333333;">
+
+  <div class="row" style="background-color:#333333;">
 
          <div class="col-md-2">
                <div class="btn-group">
-                   <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">выбрать альбом</button>
+               <br><br>
+                   <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">выбрать альбом</button>
                   <ul class="dropdown-menu">
 
                      <?php
@@ -162,6 +165,9 @@
       </a>
   </div>
 </div>
+
+<!-- end galery panel -->
+
 <div class="container">
     <div class="row">
         <div class="col-md-12" style="margin-top:10px;height:200px;background:black;">
